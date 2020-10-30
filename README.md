@@ -7,4 +7,4 @@ Dependencies are - PyTorch, numpy, python
 I used CUDA/GPU for training so if you want it to train faster make sure you have access to a GPU. If not the code still works on a GPU.
 
 # Architecture
-It has 2 LSTM layers followed by fully connected layer (256 -> 83)
+It has 2 LSTM layers followed by a fully connected layer (256 -> 83) with softmax at the end. Used Adam Optimizer with a learning rate = 0.001 and trained for 20 epochs. Loss function is cross entropy loss
